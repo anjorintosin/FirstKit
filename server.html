@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor's Tab</title>
+</head>
+<style>
+    .naming{
+        color:#ffdb59;
+    }
+    body{
+ background: #000000;
+        
+    
+    }
+    .container{
+        display:flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class = 'naming'>
+          <h1>FirstKit</h1>
+        </div>      
+    <div id="sawo-container" style="height: 300px; width: 400px;"></div>
+    <script src="https://websdk.sawolabs.com/sawo.min.js"></script>    
+<script>
+    var config = {
+        containerID: "sawo-container",
+        identifierType: "email",
+        apiKey: "0e0eb7e1-bafc-43a8-9100-003b9b3ec666",
+        onSuccess: (payload) => {
+            window.location = "./receiver/receiver.html"
+        },
+    };
+    var sawo = new Sawo(config);
+    sawo.showForm();
+</script>
+</body>
+</html>

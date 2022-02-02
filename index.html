@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient's Login</title>
+</head>
+<style type="text/css">
+     a{
+		 text-decoration: none;
+		 color: #000000;
+		;
+		 font-family: Arial;
+		 }
+		 
+    body{
+        background: black;
+
+    }
+    .name{
+        color:  #ffdb59;
+    }
+    h1{
+        font-size: 60px;
+    }
+
+    
+    body{
+ background: #000000;
+        
+    
+    }
+    .container{
+        display:flex;
+        justify-content: center;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>
+<body>
+    <div class="container">
+  <div class = "name">
+    <h1>FirstKit</h1>
+  </div>      
+    
+    <div id="sawo-container" style="height: 300px; width: 400px;"></div>
+
+    <script src="https://websdk.sawolabs.com/sawo.min.js"></script>    
+<script>
+    var config = {
+        containerID: "sawo-container",
+        identifierType: "email",
+        apiKey: "1d80f713-0c6e-425f-91c6-b1b63c06472b",
+        onSuccess: (payload) => {
+            window.location = "./sender/sender.html"
+        },
+    };
+    var sawo = new Sawo(config);
+    sawo.showForm();
+</script>
+</body>
+</html>

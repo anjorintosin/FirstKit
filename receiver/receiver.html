@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+      <style>
+body{
+  background-color: black;
+}
+
+        .DOCTOR{
+          color: #ffdb59;
+        }
+        .first{
+          color: #ffdb59;
+        }
+      </style>
+
+        <br>
+        <br> <br> <br> <br> <br> <br> <br>
+      <div class="first"><center><h1>FIRSTKIT</h1></center></div>  
+        <div>
+            <center><div class="DOCTOR"><h3> <label for="">Hello Doctor !</label></h3></div>
+                <br><br><br><br>
+                <form action="/action_page.php"></form>
+                    
+                    <select name="FirstKit" id="username-input" class="custom-select">
+                      <optgroup label="Emergency">
+                        <option value="Car Crash">Car Crash</option>
+                        <option value="Stabbing">Stabbing</option>
+                        <option value="Epilepsy Seizure">Epilepsy Seizure</option>
+                        <option value="Heart Attack">Heart Attack</option>
+                        <option value="Stroke">Stroke</option>
+                
+                      </optgroup>
+                      <optgroup label="Consultation">
+                        <option  value="Regular Consultation" >Regular Consultation</option>
+                        <option value="Neurology Department">Neurology Unit</option>
+                        <option value="Renal Department">Renal Unit</option>
+                        <option value="Dietry Department">Dietry Unit</option>
+                        <option value="gynaecology Department">Gynaecology Unit</option>
+                        <option value="Pharmacist">Pharmacist</option>
+                        <option value="Paediatric Department">Paediatric Unit</option>
+                      </optgroup>
+                    </select>
+                    <br><br><br><br><br>
+    
+                  </form> 
+       <div class="button"><span onclick="joinCall()">Join Call</span></div>></center>
+        </div>
+        <div id="video-call-div">
+            <video muted id="local-video" autoplay></video>
+            <video id="remote-video" autoplay></video>
+            <div class="call-action-div">
+             <div class="button"><span onclick="muteVideo()">Mute Video</span></div>   
+               <div class="button"><span onclick="muteAudio()">Mute Audio</span></div>
+            </div>
+        </div>
+        <script src="./receiver.js"></script>
+    </body>
+
+</html>

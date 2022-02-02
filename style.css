@@ -1,0 +1,116 @@
+#video-call-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+#local-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 16px;
+    border-radius: 16px;
+    max-width: 20%;
+    max-height: 20%;
+    background: #b92525;
+}
+
+#remote-video {
+    background: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+.call-action-div {
+    position: absolute;
+    left: 45%;
+    bottom: 32px;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #ffdb59;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 28px;
+    padding: 17px;
+    width:190px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  
+  .custom-select {
+    --radius: 0;
+    --baseFg: white;
+    --baseBg: black;
+    --accentFg: black;
+    --accentBg: orange;
+  }
+  
+  select {
+    font: 400 12px/1.3 sans-serif;
+    -webkit-appearance: none;
+    appearance: none;
+    color: var(--baseFg);
+    border: 1px solid var(--baseFg);
+    line-height: 1;
+    outline: 0;
+    padding: 0.65em 2.5em 0.55em 0.75em;
+    border-radius: var(--radius);
+    background-color: var(--baseBg);
+    background-image: linear-gradient(var(--baseFg), var(--baseFg)),
+      linear-gradient(-135deg, transparent 50%, var(--accentBg) 50%),
+      linear-gradient(-225deg, transparent 50%, var(--accentBg) 50%),
+      linear-gradient(var(--accentBg) 42%, var(--accentFg) 42%);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 1px 100%, 20px 22px, 20px 22px, 20px 100%;
+    background-position: right 20px center, right bottom, right bottom, right bottom;   
+  }
+  
+  select:hover {
+    background-image: linear-gradient(var(--accentFg), var(--accentFg)),
+      linear-gradient(-135deg, transparent 50%, var(--accentFg) 50%),
+      linear-gradient(-225deg, transparent 50%, var(--accentFg) 50%),
+      linear-gradient(var(--accentFg) 42%, var(--accentBg) 42%);
+  }
+  
+  select:active {
+    background-image: linear-gradient(var(--accentFg), var(--accentFg)),
+      linear-gradient(-135deg, transparent 50%, var(--accentFg) 50%),
+      linear-gradient(-225deg, transparent 50%, var(--accentFg) 50%),
+      linear-gradient(var(--accentFg) 42%, var(--accentBg) 42%);
+    color: var(--accentBg);
+    border-color: var(--accentFg);
+    background-color: var(--accentFg);
+  }
