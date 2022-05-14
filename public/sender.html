@@ -20,18 +20,22 @@
    color:#ffdb59 ;
    
  }
+ a{
+   color: black;
+  text-decoration: none;
+ }
 </style>
 
         <br>
       <br> <br> <br> <br> <br> <br> <br>
       <div class="name">  <center><h1>FIRSTKIT</h1></center> </div>
-        <br><br><br>
+        <br>
         <div>
             
         
         <center>
 
-         <div class="help"><h4> <label for="">Start A Video Chat With A Doctor</label></h4></div>  
+         <div class="help"><h3> <label for="">Heyyy Doctor !</label></h3></div>  
             <br><br><br><br>
             <form action="/action_page.php"></form>
                 
@@ -59,7 +63,7 @@
               </form>    
               
    
-      <div class="button"><span onclick="startCall()">Start call</span></div>  </center>
+      <div class="button"><span onclick="startCall()">Make a Call</span></div>  </center>
         </div>
         <div id="video-call-div">
             <video muted id="local-video" autoplay></video>
@@ -67,9 +71,10 @@
             <div class="call-action-div">
                <div class="button"> <span onclick="muteVideo()">Mute Video</span></div> 
             <div class="button"><span onclick="muteAudio()">Mute Audio</span></div>   
+            <div class="button"><a href="./sender.html"><span >End Call</span></a></div>
             </div>
         </div>
-        <script src="../src//sender.js"></script>
+        <script src="../src/sender.js"></script>
     </body>
 
 </html>
