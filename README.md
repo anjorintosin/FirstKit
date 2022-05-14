@@ -8,7 +8,7 @@ Your one time online hospital for video chat consultation on both Emergency and 
 ~Select a emergency case or a consultation with what department
 ~Place a call
 
-# How To Run code From client server
+# How To Run code From Medical Operator server
 ~Run node server.js
 ~Open on a live server
 ~Once logged in with your email and your doctors number and you'll receive a OTP
